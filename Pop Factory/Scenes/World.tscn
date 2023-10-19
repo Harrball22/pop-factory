@@ -1,3 +1,23 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/tile_ground.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/corn_cob.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/tile_ground_surface.png" type="Texture" id=3]
 
 [node name="World" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2, 826 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 10000, 1000 )
+
+[node name="TileGroundSurface" type="Sprite" parent="."]
+position = Vector2( -2, 310 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 10000, 32 )
+
+[node name="CornCob" type="Sprite" parent="."]
+position = Vector2( 93, 281 )
+texture = ExtResource( 2 )
