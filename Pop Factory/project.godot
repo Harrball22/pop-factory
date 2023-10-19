@@ -8,6 +8,28 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Sprite",
+"class": "Building",
+"language": "GDScript",
+"path": "res://Scripts/building.gd"
+}, {
+"base": "Sprite",
+"class": "Kernal",
+"language": "GDScript",
+"path": "res://Scripts/kernal.gd"
+}, {
+"base": "Sprite",
+"class": "Popcorn",
+"language": "GDScript",
+"path": "res://Scripts/popcorn.gd"
+} ]
+_global_script_class_icons={
+"Building": "",
+"Kernal": "",
+"Popcorn": ""
+}
+
 [application]
 
 config/name="Pop Factory"
